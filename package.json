@@ -1,0 +1,13 @@
+{
+  "name": "CommandServer",
+  "version": "1.0.0",
+  "description": "Web server to request commands execution (through bat)local using http GET requests",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Olivier Revelat",
+  "dependencies": {
+  }
+}
