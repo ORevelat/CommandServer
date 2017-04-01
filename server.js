@@ -1,7 +1,7 @@
 var http    = require('http');
 var server  = http.createServer();
 
-var httpPort = 8090;
+var httpPort = 8083;
 
 server.listen(httpPort);
 
@@ -22,7 +22,7 @@ server.on('request', function(req, res) {
 
 		console.log('\x1b[91mCommand - ' + cmd + '\x1b[0m');
 
-		var toExecute = '%CD%/commands/' + cmd + '.bat';
+		var toExecute = '%CD%/commandserver/commands/' + cmd + '.bat';
 		var exec = require('child_process').exec;
 		var child = exec(toExecute, function (err, stdout, stder) { /* do not check return error etc */ });
 	}
